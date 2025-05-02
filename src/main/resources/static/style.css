@@ -1,10 +1,15 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    text-align: center;
+    background: url('/images/festival_intro.png') no-repeat center center fixed;
+    background-size: cover; /* 또는 contain → cover로 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;  /* 세로 끝까지 채움 */
+    width: 100vw;   /* 가로 끝까지 채움 */
     margin: 0;
     padding: 50px;
-    position: relative;
-    z-index: 0;
+    text-align: center;
 }
 
 body::before {
@@ -51,6 +56,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: bold;   /* 여기 추가 */
+    color: black; /* 글씨색을 검정으로 */
 }
 
 button:hover {
